@@ -36,8 +36,7 @@ public class User {
 	@Column(name ="marketing_consent")
 	boolean marketingConsent ;
 	
-	@Column(name = "access_token")
-	String accessToken ;
+	
 
 	public User(String firstName, String lastName, String email, boolean marketingConsent, String accessToken) {
 		super();
@@ -45,7 +44,7 @@ public class User {
 		this.lastName = lastName;
 		this.email = email;
 		this.marketingConsent = marketingConsent;
-		this.accessToken = accessToken;
+		
 	}
 
 	public User() {
@@ -92,12 +91,6 @@ public class User {
 		this.marketingConsent = marketingConsent;
 	}
 
-	public String getAccessToken() {
-		return accessToken;
-	}
 
-	public void setAccessToken(String accessToken) {
-		this.accessToken = accessToken;
-	}
 
 }
